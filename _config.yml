@@ -1,0 +1,22 @@
+# Site metadata
+title: Dabbu
+description: Rethinking the way we organize and traverse large amounts of knowledge, no matter where it is stored
+
+# Theme
+theme: 'just-the-docs'
+# Needed once we push it to github pages
+remote_theme: pmarsceill/just-the-docs
+
+# Theme settings
+# Color scheme currently only supports "dark" or "light" (default)
+color_scheme: dark
+
+# Enable site search
+search_enabled: true
+
+# Aux links for the upper right navigation
+aux_links:
+  'View on GitHub':
+    - 'https://github.com/dabbu-knowledge-platform'
+  'Edit this page':
+    - 'https://github.com/dabbu-knowledge-platform/dabbu-knowledge-platform.github.io'
