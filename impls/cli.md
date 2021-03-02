@@ -21,7 +21,7 @@ On Linux/MacOS, mark the file as an executable by running `chmod u+x path/to/fil
 
 Once the CLI is started for the first time, it will ask you for a server URL. There is a public instance of the server running on [Heroku](https://dabbu-server.herokuapp.com/), but it is recommended (and very easy) to download it to your computer and run it. To setup a server on your own computer, simply follow the instructions given [here](./server).
 
-If you run into any problems while installing or using the CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/). We'll only be glad to help :)
+If you run into any problems while installing or using the CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)
 
 ## Using the CLI
 
@@ -60,4 +60,4 @@ You can use several commands to tell the CLI what you want to do. Here is a brie
 
 Typing any of the above and then hitting enter will allow you to execute that command and get a result.
 
-If you run into any problems while installing or using the CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/). We'll only be glad to help :)
+If you run into any problems while installing or using the CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)

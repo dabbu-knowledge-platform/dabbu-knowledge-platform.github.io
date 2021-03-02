@@ -21,7 +21,7 @@ On Linux/MacOS, mark the file as an executable by running `chmod u+x path/to/fil
 
 Always ensure the server is running before starting an application that uses it.
 
-If you run into any problems while installing or using the server, feel free to ask [here](https://github.com/dabbu-knowledge-platform/files-api-server/). We'll only be glad to help :)
+If you run into any problems while installing or using the server, feel free to ask [here](https://github.com/dabbu-knowledge-platform/files-api-server/discussions/categories/q-a). We'll only be glad to help :)
 
 ## Applications that use the Dabbu Files API
 
