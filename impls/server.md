@@ -34,7 +34,7 @@ If you run into any problems while installing or using the server, feel free to 
 **Using cURL:**
 
 ```bash
-$ curl -i -X GET "http://localhost:8080/dabbu/v1/api/data/<provider id>/<folder path>/?exportType=view" \
+$ curl -i -X GET "http://localhost:8080/files-api/v1/data/<provider id>/<folder path>/?exportType=view" \
   > -H "Authorization: Bearer <access_token>" \ # Only needed if the provider requires authorization
   > -d "field1: value1" -d "field2: value2" # Only needed if the provider requires certain fields
 ```
@@ -53,7 +53,7 @@ let provider = 'hard_drive' || 'google_drive' || 'one_drive' || 'gmail'
 let urlEncodedFolderPath = encodeURIComponent('/Downloads')
 
 // The URL to send the request to
-let url = `${server}/dabbu/v1/api/data/${provider}/${encodedFolderPath}?exportType=view`
+let url = `${server}/files-api/v1/data/${provider}/${encodedFolderPath}?exportType=view`
 // Send a GET request
 let res = await axios.get(url, {
   // Only needed if the provider requires certain fields, else
@@ -100,7 +100,7 @@ providerId = 'hard_drive' or 'google_drive' or 'one_drive' or 'gmail'
 folderPath = '/Downloads'
 
 # The URL to send a GET request to
-URL = 'http://localhost:8080/dabbu/v1/api/data/{providerId}/{encodedFolderPath}?exportType=view'.format(
+URL = 'http://localhost:8080/files-api/v1/data/{providerId}/{encodedFolderPath}?exportType=view'.format(
   providerId = providerId,
   encodedFolderPath = urllib.parse.quote(folderPath)
 )
@@ -136,7 +136,7 @@ else:
 **Using cURL:**
 
 ```bash
-$ curl -i -X GET "http://localhost:8080/dabbu/v1/api/data/<provider_id>/<folder_path>/<file_name>/?exportType=media" \
+$ curl -i -X GET "http://localhost:8080/files-api/v1/data/<provider_id>/<folder_path>/<file_name>/?exportType=media" \
   > -H "Authorization: Bearer <access_token>" \ # Only needed if the provider requires authorization
   > -d "field1: value1" -d "field2: value2" # Only needed if the provider requires certain fields
 ```
@@ -156,7 +156,7 @@ let urlEncodedFolderPath = encodeURIComponent('/Downloads')
 let urlEncodedFileName = encodeURIComponent('dabbu_server_log.txt')
 
 // The URL to send the request to
-let url = `${server}/dabbu/v1/api/data/${provider}/${encodedFolderPath}?exportType=media`
+let url = `${server}/files-api/v1/data/${provider}/${encodedFolderPath}?exportType=media`
 // Send a GET request
 let res = await axios.get(url, {
   // Only needed if the provider requires certain fields, else
@@ -209,7 +209,7 @@ folderPath = '/Downloads'
 fileName = 'dabbu_server_log.txt'
 
 # The URL to send a GET request to
-URL = 'http://localhost:8080/dabbu/v1/api/data/{providerId}/{encodedFolderPath}/{encodedFileName}?exportType=media'.format(
+URL = 'http://localhost:8080/files-api/v1/data/{providerId}/{encodedFolderPath}/{encodedFileName}?exportType=media'.format(
   providerId = providerId,
   encodedFolderPath = urllib.parse.quote(folderPath),
   encodedFileName = urllib.parse.quote(fileName)
@@ -248,7 +248,7 @@ else:
 **Using cURL:**
 
 ```bash
-$ curl -i -X POST "http://localhost:8080/dabbu/v1/api/data/<provider_id>/<folder_path>/<file_name>/" \
+$ curl -i -X POST "http://localhost:8080/files-api/v1/data/<provider_id>/<folder_path>/<file_name>/" \
   > -H "Authorization: Bearer <access_token>" \ # Only needed if the provider requires authorization
   > -F "content=@<path_to_local_file_to_upload>" \ # Required
   > -F "createdAtTime=2021-06-07T07:06:42Z" \ # Optional, if you want to set the createdAtTime of a file
@@ -300,7 +300,7 @@ formData.append('lastModifiedTime', '2021-06-07T07:06:42Z')
 let formHeaders = formData.getHeaders()
 
 // The URL to send the request to
-let url = `${server}/dabbu/v1/api/data/${provider}/${urlEncodedFolderPath}/${urlEncodedFileName}`
+let url = `${server}/files-api/v1/data/${provider}/${urlEncodedFolderPath}/${urlEncodedFileName}`
 // Send a POST request
 let res = await axios.post(url, formData, {
   headers: {
@@ -342,7 +342,7 @@ localFileHandle = open('./dabbu_server_log.txt', 'rb')
 
 # The URL to send a post request to
 # If you want to delete a folder, simply omit the file name
-URL = 'http://localhost:8080/dabbu/v1/api/data/{providerId}/{encodedFolderPath}/{encodedFileName}'.format(
+URL = 'http://localhost:8080/files-api/v1/data/{providerId}/{encodedFolderPath}/{encodedFileName}'.format(
   providerId = providerId,
   encodedFolderPath = urllib.parse.quote(folderPath),
   encodedFileName = urllib.parse.quote(fileName)
@@ -384,7 +384,7 @@ else:
 **Using cURL:**
 
 ```bash
-$ curl -i -X PUT "http://localhost:8080/dabbu/v1/api/data/<provider_id>/<folder_path>/<file_name>/" \
+$ curl -i -X PUT "http://localhost:8080/files-api/v1/data/<provider_id>/<folder_path>/<file_name>/" \
   > -H "Authorization: Bearer <access_token>" \ # Only needed if the provider requires authorization
   > -F "content=@<path_to_local_file_to_upload>" \ # Optional, if you want to update the file's contents
   > -F "name=new_name" \ # Optional, if you want to rename the file
@@ -438,7 +438,7 @@ formData.append('lastModifiedTime', '2021-06-07T07:06:42Z')
 let formHeaders = formData.getHeaders()
 
 // The URL to send the request to
-let url = `${server}/dabbu/v1/api/data/${provider}/${urlEncodedFolderPath}/${urlEncodedFileName}`
+let url = `${server}/files-api/v1/data/${provider}/${urlEncodedFolderPath}/${urlEncodedFileName}`
 // Send a PUT request
 let res = await axios.put(url, formData, {
   headers: {
@@ -480,7 +480,7 @@ localFileHandle = open('./dabbu_server_log.txt', 'rb')
 
 # The URL to send a put request to
 # If you want to delete a folder, simply omit the file name
-URL = 'http://localhost:8080/dabbu/v1/api/data/{providerId}/{encodedFolderPath}/{encodedFileName}'.format(
+URL = 'http://localhost:8080/files-api/v1/data/{providerId}/{encodedFolderPath}/{encodedFileName}'.format(
   providerId = providerId,
   encodedFolderPath = urllib.parse.quote(folderPath),
   encodedFileName = urllib.parse.quote(fileName)
@@ -524,7 +524,7 @@ else:
 **Using cURL:**
 
 ```bash
-$ curl -i -X DELETE "http://localhost:8080/dabbu/v1/api/data/<provider_id>/<folder_path>/<file_name>/" \ # omit the file name if you want to delete the folder
+$ curl -i -X DELETE "http://localhost:8080/files-api/v1/data/<provider_id>/<folder_path>/<file_name>/" \ # omit the file name if you want to delete the folder
   > -H "Authorization: Bearer <access_token>" \ # Only needed if the provider requires authorization
   > -d "field1: value1" -d "field2: value2" # Only needed if the provider requires certain fields
 ```
@@ -544,7 +544,7 @@ let urlEncodedFolderPath = encodeURIComponent('/Downloads')
 let urlEncodedFileName = encodeURIComponent('dabbu_server_log.txt')
 
 // The URL to send the request to
-let url = `${server}/dabbu/v1/api/data/${provider}/${encodedFolderPath}?exportType=media`
+let url = `${server}/files-api/v1/data/${provider}/${encodedFolderPath}?exportType=media`
 // Send a DELETE request
 let res = await axios.delete(url, {
   // Only needed if the provider requires certain fields, else
@@ -593,7 +593,7 @@ fileName = 'dabbu_server_log.txt'
 
 # The URL to send a DELETE request to
 # If you want to delete a folder, simply omit the file name
-URL = 'http://localhost:8080/dabbu/v1/api/data/{providerId}/{encodedFolderPath}/{encodedFileName}'.format(
+URL = 'http://localhost:8080/files-api/v1/data/{providerId}/{encodedFolderPath}/{encodedFileName}'.format(
   providerId = providerId,
   encodedFolderPath = urllib.parse.quote(folderPath),
   encodedFileName = urllib.parse.quote(fileName)
@@ -629,7 +629,7 @@ else:
 **Using cURL:**
 
 ```bash
-$ curl -i -X GET "http://localhost:8080/dabbu/v1/api/providers"
+$ curl -i -X GET "http://localhost:8080/files-api/v1/providers"
 ```
 
 **Using NodeJS:**
@@ -644,7 +644,7 @@ const axios = require('axios').default
 let server = 'http://localhost:8080'
 
 // The URL to send the request to
-let url = `${server}/dabbu/v1/api/providers`
+let url = `${server}/files-api/v1/providers`
 // Send a GET request
 let res = await axios.get(url)
 
@@ -672,7 +672,7 @@ if (res.data.content.providers.length > 0) {
 import requests
 
 # The URL to send a GET request to
-URL = 'http://localhost:8080/dabbu/v1/api/providers'
+URL = 'http://localhost:8080/files-api/v1/providers'
 
 # Make the GET request
 res = requests.get(url = URL)
@@ -691,7 +691,7 @@ else:
 
 ### Getting a file from cache (INTERNAL)
 
-**GET**: `/cache/:filePath`
+**GET**: `/internal/cache/:filePath`
 
 - Request parameters: [Compulsory]
 
