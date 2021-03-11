@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Dabbu CLI
-nav_order: 14
+nav_order: 15
 parent: Clients and API Implementations
 ---
 
@@ -14,6 +14,8 @@ Dabbu CLI (command line interface) allows you to access files and folders from y
 To install the CLI on your computer, you can simply download the latest version of it [here](https://github.com/dabbu-knowledge-platform/dabbu-cli/releases/latest).
 
 ## Running the CLI
+
+> **Note**: It is **recommended** that you move the executable to a separate folder (the servers and CLI can be put in the same folder) and run it from there. This is because the CLI will create a folder `_dabbu` which contains several important files. When moving the executable anywhere else, make sure you move the `_dabbu` folder as well.
 
 On Windows, simply double click the file to run it (it will be a `.exe`).
 
@@ -61,3 +63,9 @@ You can use several commands to tell the CLI what you want to do. Here is a brie
 Typing any of the above and then hitting enter will allow you to execute that command and get a result.
 
 If you run into any problems while installing or using the CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)
+
+### Knowledge Drive
+
+The latest version of Dabbu CLI also supports a special `knowledge` drive. This drive will, on startup, **'index'** all your files - it will extract topics, people and places from the file's content. It will then treat these as folders, that you can move into and view which files are related to which topic.
+
+To setup the `knowledge` drive, simply type in `::` into the Dabbu CLI command prompt and choose `knowledge` as the provider. Follow the instructions on screen to select which drives' files you wish to index. Once the indexing process is over, you may list out the files related to a certain topic/person/place and view the files too.

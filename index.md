@@ -14,14 +14,15 @@ The currently implemented features include:
 
 - Abstract access to information/data stored with multiple providers (Hard drive, Google Drive, One Drive, Gmail).
 - Conversion of proprietory formats to open formats or markdown.
+- Extraction of topics, people and places from knowledge stored with multiple providers.
+- Navigation by topic, person or place by treating them as folders.
 
 ## Planned features
 
 The following is a list of features that are planned or in progress:
 
-- Extraction of topics, people and places from knowledge stored with multiple providers.
-- One pagers/summaries regarding all knowledge around a certain topic, person or place based on information/data from multiple providers.
 - Navigation by topic, person or place in a knowledge graph.
+- One pagers/summaries regarding all knowledge around a certain topic, person or place based on information/data from multiple providers.
 - Syncing information/data from one provider to another.
 
 ## Getting started
@@ -41,6 +42,12 @@ To get started with the CLI, take a look at the instructions [here](./impls/cli)
 Dabbu Files API Server allows apps abstract access to the user's information stored with multiple providers.
 
 To view instructions to install the server, go [here](./impls/server).
+
+### Dabbu Intel API Server
+
+Dabbu Intel API Server can extract topics, people and places from various files (docx, pptx, xlsx, pdf and plain text content) and summarize the content in files regarding a certain topic.
+
+To view instructions to install the server, go [here](./impls/intel).
 
 ## Architecture
 

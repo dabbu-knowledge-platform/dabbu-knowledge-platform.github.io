@@ -15,6 +15,8 @@ To install the server on your computer, you can simply download the latest versi
 
 ## Running the server
 
+> **Note**: It is **recommended** that you move the executable to a separate folder (the servers and CLI can be put in the same folder) and run it from there. This is because the server will create a folder `_dabbu` which contains several important files. When moving the executable anywhere else, make sure you move the `_dabbu` folder as well.
+
 On Windows, simply double click the file to run it (it will be a `.exe`).
 
 On Linux/MacOS, mark the file as an executable by running `chmod u+x path/to/file`. Then simply type in the path to the file in Terminal.
@@ -28,6 +30,8 @@ If you run into any problems while installing or using the server, feel free to 
 - [Dabbu CLI](./cli)
 
 ## Code examples for HTTP requests
+
+> To view the API specification (required URL params, headers, request body fields, etc), go [here](../files_api/index)
 
 ### Listing files and folders in a specific folder
 
