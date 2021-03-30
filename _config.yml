@@ -6,6 +6,8 @@ description: Rethinking the way we organize and traverse large amounts of knowle
 theme: 'just-the-docs'
 # Needed once we push it to github pages
 remote_theme: pmarsceill/just-the-docs
+# Generate nicer looking links
+permalink: pretty
 
 # Theme settings
 # Color scheme currently only supports "dark" or "light" (default)
@@ -18,5 +20,14 @@ search_enabled: true
 aux_links:
   'View on GitHub':
     - 'https://github.com/dabbu-knowledge-platform'
-  'Edit this page':
-    - 'https://github.com/dabbu-knowledge-platform/dabbu-knowledge-platform.github.io'
+
+# Footer content that appears at the bottom of every page's main content
+footer_content: "Switch colour theme"
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/dabbu-knowledge-platform/dabbu-knowledge-platform.github.io" # the github URL for the repo
+gh_edit_branch: "main" # the branch that the docs are served from
+# gh_edit_source: docs # the source that the files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
