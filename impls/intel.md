@@ -6,6 +6,10 @@ parent: Clients and API Implementations
 ---
 
 # Dabbu Intel API Server
+{: .d-inline-block }
+
+Beta
+{: .label .label-blue }
 
 The Dabbu Intel API Server can extract topics, people and places from various files (docx, pptx, xlsx, pdf and plain text content) and summarize the content in files regarding a certain topic. It is an implementation of the Dabbu Intel API.
 
@@ -40,4 +44,3 @@ If you run into any problems while installing or using the server, feel free to 
 ## Code examples for HTTP requests
 
 > To view the API specification (required URL params, headers, request body fields, etc), go [here](../intel_api/index).
-
