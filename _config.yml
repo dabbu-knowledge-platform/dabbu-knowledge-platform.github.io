@@ -10,7 +10,7 @@ remote_theme: pmarsceill/just-the-docs
 permalink: pretty
 
 # Theme settings
-# Color scheme currently only supports "dark" or "light" (default)
+# Color scheme currently only supports 'dark' or 'light' (default)
 color_scheme: dark
 
 # Enable site search
@@ -22,12 +22,12 @@ aux_links:
     - 'https://github.com/dabbu-knowledge-platform'
 
 # Footer content that appears at the bottom of every page's main content
-footer_content: "Switch colour theme"
+footer_content: '<button class='btn js-toggle-dark-mode'>Switch to light theme</button> <script> const toggleDarkMode = document.querySelector('.js-toggle-dark-mode'); jtd.addEvent(toggleDarkMode, 'click', function(){ if (jtd.getTheme() === 'dark') { jtd.setTheme('light'); toggleDarkMode.textContent = 'Switch to dark theme'; } else { jtd.setTheme('dark'); toggleDarkMode.textContent = 'Switch to light theme'; } }); </script>'
 
-# Footer "Edit this page on GitHub" link text
+# Footer 'Edit this page on GitHub' link text
 gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/dabbu-knowledge-platform/dabbu-knowledge-platform.github.io" # the github URL for the repo
-gh_edit_branch: "main" # the branch that the docs are served from
+gh_edit_link_text: 'Edit this page on GitHub'
+gh_edit_repository: 'https://github.com/dabbu-knowledge-platform/dabbu-knowledge-platform.github.io' # the github URL for the repo
+gh_edit_branch: 'main' # the branch that the docs are served from
 # gh_edit_source: docs # the source that the files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+gh_edit_view_mode: 'tree' # 'tree' or 'edit' if you want the user to jump into the editor immediately
