@@ -31,7 +31,7 @@ If you run into any problems while installing or using the server, feel free to 
 
 ## Code examples for HTTP requests
 
-> To view the API specification (required URL params, headers, request body fields, etc), go [here](../files_api/index).
+> To view the API specification (required URL params, headers, request body fields, etc), go [here](/files_api/index).
 
 ### Listing files and folders in a specific folder
 

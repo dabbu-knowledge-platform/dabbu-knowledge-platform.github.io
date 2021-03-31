@@ -29,7 +29,7 @@ grand_parent: Architecture and Specifications
 
   - `code`: The HTTP response code (200 if successful) - `number`
   - `error`: Object containing `message` and `reason` fields - `object`
-  - `content`: The [files resource](../schema/files_resource.schema.json) that was just updated - `file`
+  - `content`: The [files resource](/schema/files_resource.schema.json) that was just updated - `file`
 
 - Errors:
   - `404`: The file was not found - `notFound`

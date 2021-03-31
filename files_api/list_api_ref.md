@@ -32,7 +32,7 @@ grand_parent: Architecture and Specifications
 
   - `code`: The HTTP response code (200 if successful) - `number`
   - `error`: Object containing `message` and `reason` fields - `object`
-  - `content`: Array of [files resources](../schema/files_resource.schema.json) - `array<file>`
+  - `content`: Array of [files resources](/schema/files_resource.schema.json) - `array<file>`
 
 - Errors:
   - `400`: Bad URL, invalid syntax for query parameters - `malformedURL`

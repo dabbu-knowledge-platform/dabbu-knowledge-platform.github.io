@@ -1,6 +1,6 @@
 # Site metadata
 title: Dabbu
-description: Rethinking the way we organize and traverse large amounts of knowledge, no matter where it is stored
+description: 'Rethinking the way we organize and traverse large amounts of knowledge, no matter where it is stored'
 
 # Theme
 theme: 'just-the-docs'
@@ -22,7 +22,7 @@ aux_links:
     - 'https://github.com/dabbu-knowledge-platform'
 
 # Footer content that appears at the bottom of every page's main content
-footer_content: '<button class='btn js-toggle-dark-mode'>Switch to light theme</button> <script> const toggleDarkMode = document.querySelector('.js-toggle-dark-mode'); jtd.addEvent(toggleDarkMode, 'click', function(){ if (jtd.getTheme() === 'dark') { jtd.setTheme('light'); toggleDarkMode.textContent = 'Switch to dark theme'; } else { jtd.setTheme('dark'); toggleDarkMode.textContent = 'Switch to light theme'; } }); </script>'
+footer_content: "<button class='btn js-toggle-dark-mode'>Switch to light theme</button> <script> const toggleDarkMode = document.querySelector('.js-toggle-dark-mode'); jtd.addEvent(toggleDarkMode, 'click', function(){ if (jtd.getTheme() === 'dark') { jtd.setTheme('light'); toggleDarkMode.textContent = 'Switch to dark theme'; } else { jtd.setTheme('dark'); toggleDarkMode.textContent = 'Switch to light theme'; } }); </script>"
 
 # Footer 'Edit this page on GitHub' link text
 gh_edit_link: true # show or hide edit this page link

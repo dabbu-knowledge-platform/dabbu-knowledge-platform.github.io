@@ -27,7 +27,7 @@ grand_parent: Architecture and Specifications
 
   - `code`: The HTTP response code (201 if successful) - `number`
   - `error`: Object containing `message` and `reason` fields - `object`
-  - `content`: The [files resource](../schema/files_resource.schema.json) that was just created - `file`
+  - `content`: The [files resource](/schema/files_resource.schema.json) that was just created - `file`
 
 - Errors:
   - `409`: The file already exists - `fileExists`

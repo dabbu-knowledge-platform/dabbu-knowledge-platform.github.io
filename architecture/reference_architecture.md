@@ -11,11 +11,11 @@ Dabbu is split into multiple layers - _Applications_, _API_, _Modules_, _Data_ a
 
 Here is a little infographic to illustrate the different layers:
 
-[![Reference Architecture](../media/ReferenceArchitecture.png)](../media/ReferenceArchitecture.png)
+[![Reference Architecture](/media/ReferenceArchitecture.png)](/media/ReferenceArchitecture.png)
 
-The applications layer represents the apps that end users can use, such as the [Dabbu CLI](../impls/cli).
+The applications layer represents the apps that end users can use, such as the [Dabbu CLI](/impls/cli).
 
-The API layer includes implementations of the [Dabbu Files API](../files_api/) and the [Dabbu Intelligence API](../intel_api/). Apps in the applications layer are supposed to use these APIs.
+The API layer includes implementations of the [Dabbu Files API](/files_api/) and the [Dabbu Intelligence API](/intel_api/). Apps in the applications layer are supposed to use these APIs.
 
 The modules layer consists of 'modules' or services that return data in a certain format. For example, in the Dabbu Files API, each module interfaces with a provider and converts the data into a uniform, open format.
 
