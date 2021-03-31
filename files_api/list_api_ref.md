@@ -35,7 +35,7 @@ grand_parent: Architecture and Specifications
   - `content`: Array of [files resources](/schema/files_resource.schema.json) - `array<file>`
 
 - Errors:
-  - `400`: Bad URL, invalid syntax for query parameters - `malformedURL`
+  - `400`: Bad URL, invalid syntax for query parameters - `malformedUrl`
   - `404`: The folder was not found - `notFound`
   - `500`: Internal server error, used if an uncaught exception appears - `internalServerError`
   - `501`: Provider not available - `providerNotFound`
