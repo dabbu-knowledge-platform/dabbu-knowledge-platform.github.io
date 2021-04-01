@@ -14,6 +14,7 @@ The currently implemented features include:
 
 - Abstract access to information/data stored with multiple providers (Hard drive, Google Drive, One Drive, Gmail).
 - Conversion of proprietory formats to open formats or markdown.
+- Syncing information/data from one provider to another.
 - Extraction of topics, people and places from knowledge stored with multiple providers.
 - Navigation by topic, person or place by treating them as folders.
 
@@ -23,7 +24,6 @@ The following is a list of features that are planned or in progress:
 
 - Navigation by topic, person or place in a knowledge graph.
 - One pagers/summaries regarding all knowledge around a certain topic, person or place based on information/data from multiple providers.
-- Syncing information/data from one provider to another.
 
 ## Getting started
 
