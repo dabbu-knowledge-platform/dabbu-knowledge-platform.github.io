@@ -27,11 +27,11 @@ If you run into any problems while installing or using the server, feel free to 
 
 ## Applications that use the Dabbu Files API
 
-- [Dabbu CLI](./cli)
+- [Dabbu CLI](/impls/cli)
 
 ## Code examples for HTTP requests
 
-> To view the API specification (required URL params, headers, request body fields, etc), go [here](/files_api/index).
+> To view the API specification (required URL params, headers, request body fields, etc), go [here](/files-api/).
 
 ### Listing files and folders in a specific folder
 
@@ -157,7 +157,7 @@ const axios = require('axios').default
 let server = 'http://localhost:8080'
 let provider = 'hard_drive' || 'google_drive' || 'one_drive' || 'gmail'
 let urlEncodedFolderPath = encodeURIComponent('/Downloads')
-let urlEncodedFileName = encodeURIComponent('dabbu_server_log.txt')
+let urlEncodedFileName = encodeURIComponent('answer_to_life.atl')
 
 // The URL to send the request to
 let url = `${server}/files-api/v1/data/${provider}/${encodedFolderPath}?exportType=media`
@@ -210,7 +210,7 @@ providerId = 'hard_drive' or 'google_drive' or 'one_drive' or 'gmail'
 # The folder path
 folderPath = '/Downloads'
 # The file name
-fileName = 'dabbu_server_log.txt'
+fileName = 'answer_to_life.atl'
 
 # The URL to send a GET request to
 URL = 'http://localhost:8080/files-api/v1/data/{providerId}/{encodedFolderPath}/{encodedFileName}?exportType=media'.format(
@@ -279,16 +279,16 @@ const fs = require('fs')
 let server = 'http://localhost:8080'
 let provider = 'hard_drive' || 'google_drive' || 'one_drive' || 'gmail'
 let urlEncodedFolderPath = encodeURIComponent('/Downloads')
-let urlEncodedFileName = encodeURIComponent('dabbu_server_log.txt')
+let urlEncodedFileName = encodeURIComponent('answer_to_life.atl')
 
 // The path to a local file to upload
-let localFilePath = './dabbu_server_log.txt'
+let localFilePath = './answer_to_life.atl'
 
 // Make a form data object to upload the file's contents
 let formData = new FormData()
 // Add the file's data as a readable stream to the content field
 formData.append('content', fs.createReadStream(localFilePath), {
-  filename: 'dabbu_server_log.txt',
+  filename: 'answer_to_life.atl',
 })
 
 // Add whatever fields are required by the provider in the request
@@ -339,10 +339,10 @@ providerId = 'hard_drive' or 'google_drive' or 'one_drive' or 'gmail'
 # The folder path
 folderPath = '/Downloads'
 # The file name
-fileName = 'dabbu_server_log.txt'
+fileName = 'answer_to_life.atl'
 
 # Open a local file
-localFileHandle = open('./dabbu_server_log.txt', 'rb')
+localFileHandle = open('./answer_to_life.atl', 'rb')
 
 # The URL to send a post request to
 # If you want to delete a folder, simply omit the file name
@@ -414,17 +414,17 @@ const fs = require('fs')
 let server = 'http://localhost:8080'
 let provider = 'hard_drive' || 'google_drive' || 'one_drive' || 'gmail'
 let urlEncodedFolderPath = encodeURIComponent('/Downloads')
-let urlEncodedFileName = encodeURIComponent('dabbu_server_log.txt')
+let urlEncodedFileName = encodeURIComponent('answer_to_life.atl')
 
 // The path to a local file to upload
-let localFilePath = './dabbu_server_log.txt'
+let localFilePath = './answer_to_life.atl'
 
 // Make a form data object to upload the file's contents
 let formData = new FormData()
 // Add the file's data as a readable stream to the content field
 // (only if you want to update the file's contents)
 formData.append('content', fs.createReadStream(localFilePath), {
-  filename: 'dabbu_server_log.txt',
+  filename: 'answer_to_life.atl',
 })
 
 // Add whatever fields are required by the provider in the request
@@ -477,10 +477,10 @@ providerId = 'hard_drive' or 'google_drive' or 'one_drive' or 'gmail'
 # The folder path
 folderPath = '/Downloads'
 # The file name
-fileName = 'dabbu_server_log.txt'
+fileName = 'answer_to_life.atl'
 
 # Open a local file
-localFileHandle = open('./dabbu_server_log.txt', 'rb')
+localFileHandle = open('./answer_to_life.atl', 'rb')
 
 # The URL to send a put request to
 # If you want to delete a folder, simply omit the file name
@@ -545,7 +545,7 @@ const axios = require('axios').default
 let server = 'http://localhost:8080'
 let provider = 'hard_drive' || 'google_drive' || 'one_drive' || 'gmail'
 let urlEncodedFolderPath = encodeURIComponent('/Downloads')
-let urlEncodedFileName = encodeURIComponent('dabbu_server_log.txt')
+let urlEncodedFileName = encodeURIComponent('answer_to_life.atl')
 
 // The URL to send the request to
 let url = `${server}/files-api/v1/data/${provider}/${encodedFolderPath}?exportType=media`
@@ -593,7 +593,7 @@ providerId = 'hard_drive' or 'google_drive' or 'one_drive' or 'gmail'
 # The folder path
 folderPath = '/Downloads'
 # The file name
-fileName = 'dabbu_server_log.txt'
+fileName = 'answer_to_life.atl'
 
 # The URL to send a DELETE request to
 # If you want to delete a folder, simply omit the file name

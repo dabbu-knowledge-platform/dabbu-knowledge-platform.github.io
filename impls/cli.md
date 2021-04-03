@@ -21,7 +21,7 @@ On Windows, simply double click the file to run it (it will be a `.exe`).
 
 On Linux/MacOS, mark the file as an executable by running `chmod u+x path/to/file`. Then simply type in the path to the file in Terminal.
 
-Once the CLI is started for the first time, it will ask you for a server URL. There is a public instance of the server running on [Heroku](https://dabbu-server.herokuapp.com/), but it is recommended (and very easy) to download it to your computer and run it. To setup a server on your own computer, simply follow the instructions given [here](./server).
+Once the CLI is started for the first time, it will ask you for a server URL. There is a public instance of the server running on [Heroku](https://dabbu-server.herokuapp.com/), but it is recommended (and very easy) to download it to your computer and run it. To setup a server on your own computer, simply follow the instructions given [here](/impls/server).
 
 If you run into any problems while installing or using the CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)
 
@@ -55,6 +55,7 @@ You can use several commands to tell the CLI what you want to do. Here is a brie
 - `cp <relative path to file> <relative path to place to copy to>` - Copy a file from one place to another
 - `mv <relative path to file> <relative path to place to copy to>` - Move a file from one place to another
 - `rm <relative path to file>` - Delete a file
+- `sync <relative path to folder> <relative path to folder to sync files to>` - Sync files from one folder to another efficiently
 - `<drive name>:` - Switch drives (Notice the colon at the end of the drive name)
 - `::` - Create a new drive
 - `clear` - Clear the screen
@@ -69,3 +70,5 @@ If you run into any problems while installing or using the CLI, feel free to ask
 The latest version of Dabbu CLI also supports a special `knowledge` drive. This drive will, on startup, **'index'** all your files - it will extract topics, people and places from the file's content. It will then treat these as folders, that you can move into and view which files are related to which topic.
 
 To setup the `knowledge` drive, simply type in `::` into the Dabbu CLI command prompt and choose `knowledge` as the provider. Follow the instructions on screen to select which drives' files you wish to index. Once the indexing process is over, you may list out the files related to a certain topic/person/place and view the files too.
+
+If any files have changed, you will have to recreate the drive to see the changes. This is being fixed (refer to bug report [cli#21](https://github.com/dabbu-knowledge-platform/cli/issues/21)).

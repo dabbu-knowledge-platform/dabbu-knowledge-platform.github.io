@@ -35,20 +35,20 @@ There currently exists a CLI (command line interface) that allows you to access 
 
 The CLI requires Dabbu Files API Server to be running locally or remotely (you just need to know the server URL) to interact with your files.
 
-To get started with the CLI, take a look at the instructions [here](./impls/cli).
+To get started with the CLI, take a look at the instructions [here](/impls/cli).
 
 ### Dabbu Files API Server
 
 Dabbu Files API Server allows apps abstract access to the user's information stored with multiple providers.
 
-To view instructions to install the server, go [here](./impls/server).
+To view instructions to install the server, go [here](/impls/server).
 
 ### Dabbu Intel API Server
 
 Dabbu Intel API Server can extract topics, people and places from various files (docx, pptx, xlsx, pdf and plain text content) and summarize the content in files regarding a certain topic.
 
-To view instructions to install the server, go [here](./impls/intel).
+To view instructions to install the server, go [here](/impls/intel).
 
 ## Architecture
 
-To know more about how the Dabbu Knowledge Platform is designed and how it works, take a look [here](./architecture/).
+To know more about how the Dabbu Knowledge Platform is designed and how it works, take a look [here](/architecture/).

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://dabbu-knowledge-platform.github.io/schemas/files_resource.schema.json",
+  "$id": "http://dabbu-knowledge-platform.github.io/schemas/files-resource.schema.json",
   "title": "Dabbu Files Resource",
   "description": "A file/folder stored by the user with a certain provider",
   "type": "object",

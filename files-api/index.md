@@ -22,7 +22,7 @@ Currently, if a provider needs authorization, **the client application is respon
 
 The provider on the server will use this access token to perform the specified operation on the user's files in that drive.
 
-Details of a method to handle this authorization process are given [here](./client_config).
+Details of a method to handle this authorization process are given [here](/files-api/client-config).
 
 ## Things to keep in mind while making HTTP requests
 
@@ -30,7 +30,7 @@ Always ensure that all folder paths are **delimited with a forward slash** and n
 
 Always ensure that the provider ID, folder path, file name and query parameters are **URL encoded**.
 
-Always ensure you have **supplied required fields in the request body and request headers** for that particular provider. For example, the Hard Drive requires a field in the request body called `base_path`, containing the path to the folder to treat as root while retrieving a resource. For details on what provider requires what fields/headers, take a look at [this](./client_config).
+Always ensure you have **supplied required fields in the request body and request headers** for that particular provider. For example, the Hard Drive requires a field in the request body called `base_path`, containing the path to the folder to treat as root while retrieving a resource. For details on what provider requires what fields/headers, take a look at [this](/files-api/client-config).
 
 ## Supported HTTP methods
 

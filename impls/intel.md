@@ -39,8 +39,8 @@ If you run into any problems while installing or using the server, feel free to 
 
 ## Applications that use the Dabbu Intel API
 
-- [Dabbu CLI](./cli)
+- [Dabbu CLI](/impls/cli)
 
 ## Code examples for HTTP requests
 
-> To view the API specification (required URL params, headers, request body fields, etc), go [here](/intel_api/index).
+> To view the API specification (required URL params, headers, request body fields, etc), go [here](/intel-api/).
