@@ -11,23 +11,48 @@ Dabbu CLI (command line interface) allows you to access files and folders from y
 
 ## Installation
 
+### Linux/MacOS
+
+On Linux/MacOS, simply type the following in your terminal and follow on-screen instructions:
+
+```
+$ wget https://raw.githubusercontent.com/dabbu-knowledge-platform/cli/main/scripts/install -O - | bash
+```
+<sub>Hint: No need to copy the $ sign at the beginning</sub>
+
+Then type `dabbu-cli` to run the CLI.
+
+#### Advanced options
+
+To simply do a dry run, save the install script and then run it with the -f option:
+
+```
+$ wget https://raw.githubusercontent.com/dabbu-knowledge-platform/cli/main/scripts/install
+$ ./install -f
+```
+
+To reinstall the script, run the script with the -o option:
+
+```
+$ wget https://raw.githubusercontent.com/dabbu-knowledge-platform/cli/main/scripts/install
+$ ./install -o
+```
+
+### Windows
+
+<sub>An installer script for windows is in progress</sub>
+
 To install the CLI on your computer, you can simply download the latest version of it [here](https://github.com/dabbu-knowledge-platform/dabbu-cli/releases/latest).
 
-## Running the CLI
+> **Note (for Windows)**: It is **recommended** that you move the executable to a separate folder (the servers and CLI can be put in the same folder) and run it from there. This is because the CLI will create a folder `_dabbu` which contains several important files. When moving the executable anywhere else, make sure you move the `_dabbu` folder as well.
 
-> **Note**: It is **recommended** that you move the executable to a separate folder (the servers and CLI can be put in the same folder) and run it from there. This is because the CLI will create a folder `_dabbu` which contains several important files. When moving the executable anywhere else, make sure you move the `_dabbu` folder as well.
+Once download, simply double click the file to run it (it will be a `.exe`).
 
-On Windows, simply double click the file to run it (it will be a `.exe`).
-
-On Linux/MacOS, mark the file as an executable by running `chmod u+x path/to/file`. Then simply type in the path to the file in Terminal.
-
-Once the CLI is started for the first time, it will ask you for a server URL. There is a public instance of the server running on [Heroku](https://dabbu-server.herokuapp.com/), but it is recommended (and very easy) to download it to your computer and run it. To setup a server on your own computer, simply follow the instructions given [here](/impls/server).
+Once the CLI is started for the first time, it will ask you for a server URL. There is a public instance of the server running on [Heroku](https://dabbu-server.herokuapp.com/), but it is recommended (and very easy) to download it to your computer and run it. To setup a server on your own computer, simply follow the instructions given [here](/impls/server). Always start the server before using the CLI. (URL if the server is running on your computer - http://localhost:8080)
 
 If you run into any problems while installing or using the CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)
 
-## Using the CLI
-
-Upon starting the CLI for the first time, it will present you with a setup flow. It will ask you to enter the server URL (which is http://localhost:8080 if you are running the server on your computer) and then to setup a 'drive'. 
+## Setting up
 
 A drive, just like physical drives on your computer - `c:`, `d:`, `e:`, etc., allows you to access files and folders from a certain provider. Follow the instructions the CLI shows you to setup the drive.
 
@@ -71,4 +96,4 @@ The latest version of Dabbu CLI also supports a special `knowledge` drive. This 
 
 To setup the `knowledge` drive, simply type in `::` into the Dabbu CLI command prompt and choose `knowledge` as the provider. Follow the instructions on screen to select which drives' files you wish to index. Once the indexing process is over, you may list out the files related to a certain topic/person/place and view the files too.
 
-If any files have changed, you will have to recreate the drive to see the changes. This is being fixed (refer to bug report [cli#21](https://github.com/dabbu-knowledge-platform/cli/issues/21)).
+If any files have changed, you will have to recreate the drive to see the changes. This is being fixed (refer to issue [cli#21](https://github.com/dabbu-knowledge-platform/cli/issues/21) on Github).
