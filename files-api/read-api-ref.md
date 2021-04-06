@@ -28,7 +28,7 @@ grand_parent: Architecture and Specifications
 
   - `code`: The HTTP response code (200 if successful) - `number`
   - `error`: Object containing `message` and `reason` fields - `object`
-  - `content`: A [files resource](/schema/files_resource.schema.json) - `file`
+  - `content`: A [files resource](/schema/files-resource.schema.json) - `file`
 
 - Errors:
   - `404`: The folder was not found - `notFound`

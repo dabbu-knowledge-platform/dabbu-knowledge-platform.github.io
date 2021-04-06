@@ -12,7 +12,7 @@ Dabbu Files API is a REST API to interact with your files and folders from multi
 
 ## Resources in Dabbu
 
-In Dabbu, all resources are either files or folders. These resources are represented as **JSON objects** as defined [here](/schema/files_resource.schema.json).
+In Dabbu, all resources are either files or folders. These resources are represented as **JSON objects** as defined [here](/schema/files-resource.schema.json).
 
 ## Authorization for certain providers
 

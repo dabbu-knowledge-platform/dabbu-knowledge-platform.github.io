@@ -22,6 +22,7 @@ grand_parent: Architecture and Specifications
   - `value`: The value of the field the item must be equal to, less than or greater than - `string`
   - `orderBy`: Order by a field (specify field name) - `string`
   - `direction`: The order in which to sort the items - `enum<string> - asc, desc`
+  - `limit`: The maximum number of items to return [max `50`] - `number`
   - `exportType`: Type of URI that the content should be returned in; `view` for opening it in the provider's editor, `media` for a download link, other values may be accepted by the provider - `string`
 
 - Request body: [Optional]
@@ -32,7 +33,8 @@ grand_parent: Architecture and Specifications
 
   - `code`: The HTTP response code (200 if successful) - `number`
   - `error`: Object containing `message` and `reason` fields - `object`
-  - `content`: Array of [files resources](/schema/files_resource.schema.json) - `array<file>`
+  - `content`: Array of [files resources](/schema/files-resource.schema.json) - `array<file>`
+  - `nextSetToken`: The token to specify along with the same request to get the next set of items - `string`
 
 - Errors:
   - `400`: Bad URL, invalid syntax for query parameters - `malformedUrl`
