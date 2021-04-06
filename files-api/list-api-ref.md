@@ -22,8 +22,9 @@ grand_parent: Architecture and Specifications
   - `value`: The value of the field the item must be equal to, less than or greater than - `string`
   - `orderBy`: Order by a field (specify field name) - `string`
   - `direction`: The order in which to sort the items - `enum<string> - asc, desc`
-  - `limit`: The maximum number of items to return [max `50`] - `number`
   - `exportType`: Type of URI that the content should be returned in; `view` for opening it in the provider's editor, `media` for a download link, other values may be accepted by the provider - `string`
+  - `limit`: The maximum number of items to return [max `50`] - `number`
+  - `nextSetToken`: The token to send back to the server to get a particular set of items - `string`
 
 - Request body: [Optional]
 

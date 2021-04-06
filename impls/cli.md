@@ -16,26 +16,20 @@ Dabbu CLI (command line interface) allows you to access files and folders from y
 On Linux/MacOS, simply type the following in your terminal and follow on-screen instructions:
 
 ```
-$ wget https://raw.githubusercontent.com/dabbu-knowledge-platform/cli/main/scripts/install -O - | bash
+wget https://raw.githubusercontent.com/dabbu-knowledge-platform/cli/main/scripts/install -O - | bash
 ```
-<sub>Hint: No need to copy the $ sign at the beginning</sub>
 
 Then type `dabbu-cli` to run the CLI.
 
-#### Advanced options
+To reinstall or update the server, simply run the script again.
 
-To simply do a dry run, save the install script and then run it with the -f option:
+#### **Advanced options**
 
-```
-$ wget https://raw.githubusercontent.com/dabbu-knowledge-platform/cli/main/scripts/install
-$ ./install -f
-```
-
-To reinstall the script, run the script with the -o option:
+To simply do a dry run, save the install script and then run it with the -d option:
 
 ```
-$ wget https://raw.githubusercontent.com/dabbu-knowledge-platform/cli/main/scripts/install
-$ ./install -o
+wget https://raw.githubusercontent.com/dabbu-knowledge-platform/cli/main/scripts/install
+./install -d
 ```
 
 ### Windows
