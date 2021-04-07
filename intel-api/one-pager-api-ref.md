@@ -3,7 +3,7 @@ layout: home
 title: One Pager API Specification
 nav_order: 9
 parent: Dabbu Intel API Specification
-grand_parent: Architecture and Specifications
+grand_parent: API Reference
 ---
 
 # Creating a summary regarding a certain topic, person or place from file(s)

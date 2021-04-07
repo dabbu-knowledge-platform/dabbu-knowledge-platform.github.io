@@ -2,7 +2,7 @@
 layout: home
 title: Dabbu Files API Server
 nav_order: 13
-parent: Clients and API Implementations
+parent: API Implementations
 ---
 
 # Dabbu Files API Server

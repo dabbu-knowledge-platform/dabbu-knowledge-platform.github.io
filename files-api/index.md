@@ -2,7 +2,7 @@
 layout: home
 title: Dabbu Files API Specification
 nav_order: 5
-parent: Architecture and Specifications
+parent: API Reference
 has_children: true
 ---
 

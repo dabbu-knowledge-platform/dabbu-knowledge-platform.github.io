@@ -3,7 +3,7 @@ layout: home
 title: Delete API Specification
 nav_order: 10
 parent: Dabbu Files API Specification
-grand_parent: Architecture and Specifications
+grand_parent: API Reference
 ---
 
 # Deleting a file or folder

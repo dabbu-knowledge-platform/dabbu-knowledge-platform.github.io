@@ -2,7 +2,7 @@
 layout: home
 title: Reference Architecture
 nav_order: 4
-parent: Architecture and Specifications
+parent: API Reference
 ---
 
 # Reference Architecture

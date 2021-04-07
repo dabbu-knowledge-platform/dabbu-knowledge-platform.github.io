@@ -2,7 +2,7 @@
 layout: home
 title: Dabbu Intel API Specification
 nav_order: 6
-parent: Architecture and Specifications
+parent: API Reference
 has_children: true
 ---
 

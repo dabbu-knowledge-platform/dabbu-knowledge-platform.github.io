@@ -3,7 +3,7 @@ layout: home
 title: Extract Info API Specification
 nav_order: 8
 parent: Dabbu Intel API Specification
-grand_parent: Architecture and Specifications
+grand_parent: API Reference
 ---
 
 # Extracting topics, people and places from file(s)

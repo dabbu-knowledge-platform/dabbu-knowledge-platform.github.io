@@ -3,7 +3,7 @@ layout: home
 title: List API Specification
 nav_order: 6
 parent: Dabbu Files API Specification
-grand_parent: Architecture and Specifications
+grand_parent: API Reference
 ---
 
 # Listing files and folders in a specific folder

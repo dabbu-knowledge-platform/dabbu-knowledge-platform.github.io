@@ -3,7 +3,7 @@ layout: home
 title: Update API Specification
 nav_order: 9
 parent: Dabbu Files API Specification
-grand_parent: Architecture and Specifications
+grand_parent: API Reference
 ---
 
 # Updating a file's metadata and/or contents

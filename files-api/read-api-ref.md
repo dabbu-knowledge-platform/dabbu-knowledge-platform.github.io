@@ -3,7 +3,7 @@ layout: home
 title: Get API Specification
 nav_order: 7
 parent: Dabbu Files API Specification
-grand_parent: Architecture and Specifications
+grand_parent: API Reference
 ---
 
 # Retrieving a file's data

@@ -2,7 +2,7 @@
 layout: home
 title: Dabbu Intel API Server
 nav_order: 14
-parent: Clients and API Implementations
+parent: API Implementations
 ---
 
 # Dabbu Intel API Server

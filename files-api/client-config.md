@@ -3,7 +3,7 @@ layout: home
 title: Client Configuration Guidelines
 nav_order: 11
 parent: Dabbu Files API Specification
-grand_parent: Architecture and Specifications
+grand_parent: API Reference
 ---
 
 # Client Configuration Guidelines
