@@ -61,8 +61,11 @@ $ git checkout -b docs/add-cli-usage-instructions -t upstream/develop
 
 Make all the changes you want to the documentation!
 
-- `index.md` contains an introduction to Dabbu Knowledge platform
-- `api.md` contains the reference architecture diagram and links to the documentation of the Files and Intel API Servers
+- `index.md` contains an introduction to Dabbu Knowledge platform.
+- `install.md` contains installation instructions.
+- `setup-and-commands.md` contains a guide to introduce the user to the commands in Dabbu CLI.
+- `api.md` contains the reference architecture diagram and links to the documentation of the Files and Intel API Servers.
+- `legal.md` contains the license and code of conduct.
 
 ### Step 5: Commit
 
