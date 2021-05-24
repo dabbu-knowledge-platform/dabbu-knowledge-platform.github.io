@@ -12,6 +12,8 @@ Excited to use Dabbu? Here's how to install it on your machine:
 
 Download the latest `windows-generic` release from the [releases page](https://github.com/dabbu-knowledge-platform/cli/releases/latest). Once downloaded, unzip it and run the `.exe` file by double clicking on it. Run the `.exe` file every time you want to run the CLI.
 
+[Setup and Commands \>\>](./setup-and-commands)
+
 ## MacOS
 
 Download the latest `macos-pkg` release from the [releases page](https://github.com/dabbu-knowledge-platform/cli/releases/latest). Once downloaded, simply double click on the .pkg file to install the CLI. Then run the CLI from the terminal by typing `dabbu-cli` and hitting enter.
@@ -25,6 +27,8 @@ chmod 777 /usr/bin/dabbu-cli
 
 Then run the CLI by typing `dabbu-cli` and hitting enter.
 
+[Setup and Commands \>\>](./setup-and-commands)
+
 ## Linux - DEB file (Debian/Ubuntu/Linux Mint/etc)
 
 Download the latest `linux-deb` release from the [releases page](https://github.com/dabbu-knowledge-platform/cli/releases/latest). Once downloaded, simply double click on the `.deb` file to install the CLI. Then run the CLI from the terminal by typing `dabbu-cli` and hitting enter.
@@ -36,6 +40,8 @@ dpkg -i ~/Downloads/dabbu-cli-linux-deb-amd64.deb
 ```
 
 Then run the CLI from the terminal by typing `dabbu-cli` and hitting enter.
+
+[Setup and Commands \>\>](./setup-and-commands)
 
 ## Linux - RPM file (RedHat/CentOS/Fedora/etc)
 
@@ -49,6 +55,8 @@ rpm -ivh ~/Downloads/dabbu-cli-linux-rpm-amd64.rpm
 
 Then run the CLI from the terminal by typing `dabbu-cli` and hitting enter.
 
+[Setup and Commands \>\>](./setup-and-commands)
+
 ## Linux - Arch Linux/Manjaro
 
 Download the latest `linux-arch` release from the [releases page](https://github.com/dabbu-knowledge-platform/cli/releases/latest). Once downloaded, run the following in terminal (this command assumes you downloaded the `.tar.gz` file to `~/Downloads/dabbu-cli-linux-arch-amd64.tar.gz`):
@@ -58,6 +66,8 @@ pacman -U ~/Downloads/dabbu-cli-linux-arch-amd64.tar.gz
 ```
 
 Then run the CLI from the terminal by typing `dabbu-cli` and hitting enter.
+
+[Setup and Commands \>\>](./setup-and-commands)
 
 ## Linux - Alpine
 
@@ -70,6 +80,8 @@ apk add --allow-untrusted ~/Downloads/dabbu-cli-linux-alpine-amd64.apk
 > Note: The --allow-untrusted flag is required as we do not sign the file as of now. If you do not feel comfortable using this flag, skip to [building the CLI from source](#building-from-source-macos-and-linux-only).
 
 Then run the CLI by typing `dabbu-cli` and hitting enter.
+
+[Setup and Commands \>\>](./setup-and-commands)
 
 ## Linux - Generic
 
@@ -87,6 +99,8 @@ cp ~/Downloads/dabbu-cli-linux-generic-amd64/dabbu-cli.desktop /usr/share/applic
 Then run the CLI by typing `dabbu-cli` and hitting enter.
 
 If you run into any problems while installing or using Dabbu CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)
+
+[Setup and Commands \>\>](./setup-and-commands)
 
 ## Building from source (MacOS and Linux only)
 
@@ -133,3 +147,5 @@ $ yarn package
 If the command runs successfully, you will be able to see the generated packages in the `dist/packages/` folder and binaries in the `dist/binaries/` folder. The packages are the same as the ones distributed as part of the [latest release](https://github.com/dabbu-knowledge-platform/cli/releases/latest/). The binaries generated (`cli-alpine`, `cli-linux`, `cli-macos`, and `cli-win.exe`) can be run on alpine, linux, macos and windows respectively without installation of external dependencies.
 
 On Windows, you can double click on the `.exe` file from file manager to run the CLI. On Linux/MacOS, simply type the path to the files (`./dist/cli-alpine` OR `./dist/cli-linux` OR `./dist/cli-macos`) in terminal and hit enter to run the CLI.
+
+[Setup and Commands \>\>](./setup-and-commands)

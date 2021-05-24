@@ -4,8 +4,6 @@ title: Setup and Commands
 nav_order: 3
 ---
 
-# Getting started
-
 ## Setup
 
 Once Dabbu is started for the first time, it will ask you for a server URL. Please enter `https://dabbu-server.herokuapp.com`.
@@ -16,7 +14,7 @@ You can use several commands to tell Dabbu what you want to do. Read on to know 
 
 ## Using commands
 
-### **The prompt**
+### The prompt
 
 Once a drive is created, you will see something called a 'prompt' on the screen. It looks like this:
 
@@ -28,7 +26,7 @@ Once a drive is created, you will see something called a 'prompt' on the screen.
 
 The prompt shows you what drive which folder/directory you are currently in. You can also type `pwd` (short form for **P**rint **W**orking **D**irectory) and hit `enter` to know that information.
 
-### **Moving around**
+### Moving around
 
 Dabbu has a notion of the _current working directory_, which refers to what folder/directory you are currently in. A special symbol, `.` (the full stop), is used to refer to the current folder/directory you are in. Another special symbol, `..` (two full stops), is used to refer to the _parent folder/directory_ of the current working directory.
 
@@ -64,7 +62,7 @@ Notice the colon at the end - it tells Dabbu that you are talking about a drive.
 
 To create a new drive, simply type in `new-drive` and hit enter.
 
-### **Listing files and folders**
+### Listing files and folders
 
 To list files and folders within the your current working directory, type in `list`. For example, if I am in the `Work` directory, typing in `list` will show you a list of the files and folders within the `Work` directory.
 
@@ -72,7 +70,7 @@ Optionally, you can specify which directory's files and folders to list using `l
 
 The `list` command prints the number of files in that folder (if there are less than 50 files) and a table of the files and folders. The table has 4 columns: `Name`, `Size`, `Type`,`Last Modified Time` and `Actions`. The file/folder name is coloured blue if it is a folder (it also has the words folder written in brackets next to the name) and magenta if it is a file. The size and last modified time are formatted into human readable formats. The type column shows the type of the file. The actions column contains a link that opens the file in the provider's preferred editor. This means that if you click on a link for a from Google Drive, it will open the Google Drive File Viewer to display the file. Use the `read` command to download and view the file on your computer.
 
-### **Downloading and viewing files**
+### Downloading and viewing files
 
 To download a file to your computer and open it up, type in `read <path to file>` and hit `enter`. This will download the file temporarily on your computer and open it using the default app to open that file on your computer. The file will be deleted once Dabbu is closed. For example, to download the file `Dabbu Design Document` in the `Work` folder, type in the following and hit `enter`:
 
@@ -84,7 +82,7 @@ Notice that the path to the file is surrounded by quotes (`"`). This is only req
 
 If you want to save the file to your hard drive or to another drive, use the `copy` (copy) command as mentioned below.
 
-### **Copying/moving files**
+### Copying/moving files
 
 To copy a file from one drive to another drive, use the `copy` (short form for **c**o**p**y) command as follows:
 
@@ -116,7 +114,7 @@ Notice two things:
 
 To rename a file without copying it, or to move a file instead of copying it, just use `mv` instead of `copy`.
 
-### **Deleting files**
+### Deleting files
 
 To delete a file on a certain drive, use the `del` ((short form for **r**e**m**ove)) command. For example, to delete the file `Dabbu Design Document` in the `Work` folder, type in the following and hit `enter`:
 

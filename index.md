@@ -17,3 +17,5 @@ You can also go into the special knowledge drive where you can pivot information
 All of this has been implemented by abstracting access to providers (you can add more providers as modules) and exposing a unified API for information (no matter where and what form it takes).
 
 The only way to use Dabbu (at the moment) is through a command-line interface (CLI). A desktop interface is in the works.
+
+[Installation \>\>](./install)
