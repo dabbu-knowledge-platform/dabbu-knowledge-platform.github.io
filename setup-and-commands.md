@@ -165,4 +165,4 @@ Typing any of the above and then hitting enter will allow you to execute that co
 - [**Gmail**](https://github.com/dabbu-knowledge-platform/files-api-server/blob/develop/docs/providers/gmail.md)
 - [**One Drive**](https://github.com/dabbu-knowledge-platform/files-api-server/blob/develop/docs/providers/onedrive.md)
 
-_And more to come...!_
+To request a new provider, file an issue [here](https://github.com/dabbu-knowledge-platform/files-api-server/issues/new/choose).
