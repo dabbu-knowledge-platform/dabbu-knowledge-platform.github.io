@@ -8,11 +8,15 @@ nav_order: 2
 
 Excited to use Dabbu? Here's how to install it on your machine:
 
+If you run into any problems while installing or using Dabbu CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)
+
 ## Windows
 
 Download the latest `windows-generic` release from the [releases page](https://github.com/dabbu-knowledge-platform/cli/releases/latest). Once downloaded, unzip it and run the `.exe` file by double clicking on it. Run the `.exe` file every time you want to run the CLI.
 
-[Setup and Commands \>\>](./setup-and-commands)
+[Next: Setup and Commands \>\>](./setup-and-commands)
+{: .float-right}
+<br><br>
 
 ## MacOS
 
@@ -27,7 +31,9 @@ chmod 777 /usr/bin/dabbu-cli
 
 Then run the CLI by typing `dabbu-cli` and hitting enter.
 
-[Setup and Commands \>\>](./setup-and-commands)
+[Next: Setup and Commands \>\>](./setup-and-commands)
+{: .float-right}
+<br><br>
 
 ## Linux - DEB file (Debian/Ubuntu/Linux Mint/etc)
 
@@ -41,7 +47,9 @@ dpkg -i ~/Downloads/dabbu-cli-linux-deb-amd64.deb
 
 Then run the CLI from the terminal by typing `dabbu-cli` and hitting enter.
 
-[Setup and Commands \>\>](./setup-and-commands)
+[Next: Setup and Commands \>\>](./setup-and-commands)
+{: .float-right}
+<br><br>
 
 ## Linux - RPM file (RedHat/CentOS/Fedora/etc)
 
@@ -55,7 +63,9 @@ rpm -ivh ~/Downloads/dabbu-cli-linux-rpm-amd64.rpm
 
 Then run the CLI from the terminal by typing `dabbu-cli` and hitting enter.
 
-[Setup and Commands \>\>](./setup-and-commands)
+[Next: Setup and Commands \>\>](./setup-and-commands)
+{: .float-right}
+<br><br>
 
 ## Linux - Arch Linux/Manjaro
 
@@ -67,7 +77,9 @@ pacman -U ~/Downloads/dabbu-cli-linux-arch-amd64.tar.gz
 
 Then run the CLI from the terminal by typing `dabbu-cli` and hitting enter.
 
-[Setup and Commands \>\>](./setup-and-commands)
+[Next: Setup and Commands \>\>](./setup-and-commands)
+{: .float-right}
+<br><br>
 
 ## Linux - Alpine
 
@@ -81,7 +93,9 @@ apk add --allow-untrusted ~/Downloads/dabbu-cli-linux-alpine-amd64.apk
 
 Then run the CLI by typing `dabbu-cli` and hitting enter.
 
-[Setup and Commands \>\>](./setup-and-commands)
+[Next: Setup and Commands \>\>](./setup-and-commands)
+{: .float-right}
+<br><br>
 
 ## Linux - Generic
 
@@ -98,9 +112,9 @@ cp ~/Downloads/dabbu-cli-linux-generic-amd64/dabbu-cli.desktop /usr/share/applic
 
 Then run the CLI by typing `dabbu-cli` and hitting enter.
 
-If you run into any problems while installing or using Dabbu CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)
-
-[Setup and Commands \>\>](./setup-and-commands)
+[Next: Setup and Commands \>\>](./setup-and-commands)
+{: .float-right}
+<br><br>
 
 ## Building from source (MacOS and Linux only)
 
@@ -148,4 +162,6 @@ If the command runs successfully, you will be able to see the generated packages
 
 On Windows, you can double click on the `.exe` file from file manager to run the CLI. On Linux/MacOS, simply type the path to the files (`./dist/cli-alpine` OR `./dist/cli-linux` OR `./dist/cli-macos`) in terminal and hit enter to run the CLI.
 
-[Setup and Commands \>\>](./setup-and-commands)
+[Next: Setup and Commands \>\>](./setup-and-commands)
+{: .float-right}
+<br><br>

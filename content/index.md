@@ -18,4 +18,8 @@ All of this has been implemented by abstracting access to providers (you can add
 
 The only way to use Dabbu (at the moment) is through a command-line interface (CLI). A desktop interface is in the works.
 
-[Installation \>\>](./install)
+[Next: Installation \>\>](./install)
+{: .float-right}
+<br><br>
+
+If you run into any problems while installing or using Dabbu CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)

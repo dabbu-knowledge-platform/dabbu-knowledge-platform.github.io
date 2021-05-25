@@ -12,6 +12,8 @@ Then, Dabbu will ask you to setup your first 'drive'. A drive is just like a usb
 
 You can use several commands to tell Dabbu what you want to do. Read on to know more about how to use them.
 
+Also, if you run into any problems while installing or using Dabbu CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)
+
 ## Using commands
 
 ### The prompt

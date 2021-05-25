@@ -7,3 +7,11 @@ baseurl: "/docs"
 markdown: kramdown
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
+
+footer_content: "Copyright (C) 2021 Dabbu Knowledge Platform dabbuknowledgeplatform@gmail.com"
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/dabbu-knowledge-platform/docs"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
