@@ -1,4 +1,7 @@
-title: "Dabbu Knowledge Platform"
-description: "Documentation for the Dabbu Knowledge Platform and its projects"
+title: Dabbu
+description: Documentation for the Dabbu Knowledge Platform and its projects
 
-url: "https://dabbu-knowledge-platform.github.io"
+url: https://dabbu-knowledge-platform.github.io
+
+remote_theme: pmarsceill/just-the-docs
+color_scheme: dark
