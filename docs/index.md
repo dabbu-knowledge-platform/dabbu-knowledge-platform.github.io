@@ -22,4 +22,12 @@ The only way to use Dabbu (at the moment) is through a command-line interface (C
 {: .float-right}
 <br><br>
 
+[Or: View API docs \>\>](./api)
+{: .float-right}
+<br><br>
+
+[Or: View license and code of conduct \>\>](./legal)
+{: .float-right}
+<br><br>
+
 If you run into any problems while installing or using Dabbu CLI, feel free to ask [here](https://github.com/dabbu-knowledge-platform/cli/discussions/categories/q-a). We'll only be glad to help :)
