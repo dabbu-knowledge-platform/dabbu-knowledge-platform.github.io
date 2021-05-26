@@ -8,7 +8,7 @@ nav_order: 3
 
 Once Dabbu is started for the first time, it will ask you for a server URL. There is a server hosted on Heroku (`https://dabbu-server.herokuapp.com`), which is free to use. But it is recommended to setup and run the server on your own machine if you can. Instructions to do that are given [here](https://github.com/dabbu-knowledge-platform/files-api-server/blob/develop/docs/running-the-server.md).
 
-If you decide to use the free server, enter `https://dabbu-server.herokuapp.com` as the server URL. If you decide to set it up on your own machine, enter `http://localhost:<PORT NUMBER>` as the server URL, where `<PORT NUMBER>` is the port the server is running on (printed out when the server starts).
+If you decide to use the free server, enter `https://dabbu-server.herokuapp.com` as the server URL. If you decide to set it up on your own machine, enter `http://localhost:<PORT NUMBER>` as the server URL, where `<PORT NUMBER>` is the port the server is running on (printed out when the server starts). To change the server URL later on, use the config command as follows: `config set serverURL <YOUR NEW URL>`.
 
 Then, Dabbu will ask you to setup your first 'drive'. A drive is just like a usb drive attached to your computer - `c:`, `d:`, `e:`, etc - but instead of showing files from the USB drive, it shows you files and folders from a certain provider (Gmail, Google Drive, OneDrive, ...). Follow the instructions Dabbu shows you to setup the drive.
 
@@ -157,6 +157,7 @@ Be careful while using the `del` command as it usually permanently deletes files
 - `copy <relative path to file> <relative path to place to copy to>` - Copy a file from one place to another
 - `del <relative path to file>` - Delete a file
 - `new-drive` - Create a new drive
+- `config <get | set | del> <field path> [value to set]` - View/set/delete a field in the config file
 - `clear` - Clear the screen
 - `CTRL+C OR exit` - Exit
 
